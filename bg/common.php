@@ -344,7 +344,7 @@ $lang = array_merge($lang, array(
 	'INTERESTS'					=> 'Интереси',
 	'INVALID_DIGEST_CHALLENGE'	=> 'Невалиден код.',
 	'INVALID_EMAIL_LOG'			=> '<strong>%s</strong> е вероятно грешен мейл адрес.',
-	'INVALID_FEED_ATTACHMENTS'	=> 'The selected feed tried fetching attachments with invalid constraints.',
+	'INVALID_FEED_ATTACHMENTS'	=> 'Избраният фийд оптиа да свали приложения с невалидни ограничения',
 	'INVALID_PLURAL_RULE'		=> 'Избраното множествено правило е грешно. Валидни стойности са цели числа между 0 и 15.',
 	'IP'						=> 'IP',
 	'IP_BLACKLISTED'			=> 'Вашият IP адрес %1$s е блокиран, защото е в черния списък. За повече информация, моля посетете <a href="%2$s">%2$s</a>.',
