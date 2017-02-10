@@ -347,7 +347,7 @@ $lang = array_merge($lang, array(
 	'INVALID_FEED_ATTACHMENTS'	=> 'The selected feed tried fetching attachments with invalid constraints.',
 	'INVALID_PLURAL_RULE'		=> 'Избраното множествено правило е грешно. Валидни стойности са цели числа между 0 и 15.',
 	'IP'						=> 'IP',
-	'IP_BLACKLISTED'			=> 'Вашият IP адрес %1$s е блокиран защото е в черния списък. За повече информация, моля посетете <a href="%2$s">%2$s</a>.',
+	'IP_BLACKLISTED'			=> 'Вашият IP адрес %1$s е блокиран, защото е в черния списък. За повече информация, моля посетете <a href="%2$s">%2$s</a>.',
 
 	'JABBER'				=> 'Jabber',
 	'JOINED'				=> 'Регистриран',
