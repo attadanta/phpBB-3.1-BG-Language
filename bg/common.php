@@ -530,30 +530,30 @@ $lang = array_merge($lang, array(
 
 	// Nullar/Singular/Plural language entry. The key numbers define the number range in which a certain grammatical expression is valid.
 	'NUM_ATTACHMENTS'		=> array(
-		1	=> '%d attachment',
-		2	=> '%d attachments',
+		1	=> '%d прикачен файл',
+		2	=> '%d прикачени файлa',
 	),
 	'NUM_POSTS_IN_QUEUE'		=> array(
-		0			=> 'No posts in queue',		// 0
-		1			=> '1 post in queue',		// 1
-		2			=> '%d posts in queue',		// 2+
+		0			=> 'Няма мнения в опашката',		// 0
+		1			=> 'Едно мнение в опашката',		// 1
+		2			=> '%d мнения в опашката',		// 2+
 	),
 
-	'OCCUPATION'				=> 'Occupation',
-	'OFFLINE'					=> 'Offline',
-	'ONLINE'					=> 'Online',
-	'ONLINE_BUDDIES'			=> 'Online friends',
+	'OCCUPATION'				=> 'Професия',
+	'OFFLINE'					=> 'Извън линия',
+	'ONLINE'					=> 'На линия',
+	'ONLINE_BUDDIES'			=> 'Приятели на линия',
 	// "... :: x registered and y hidden"
 	'ONLINE_USERS_TOTAL'		=> array(
-		1	=> 'In total there is <strong>%1$d</strong> user online :: %2$s and %3$s',
-		2	=> 'In total there are <strong>%1$d</strong> users online :: %2$s and %3$s',
+		1	=> 'В момента има <strong>%1$d</strong> потребител на линия :: %2$s и %3$s',
+		2	=> 'В момента има <strong>%1$d</strong> потребител на линия :: %2$s и %3$s',
 	),
 	// "... :: x registered, y hidden and z guests"
 	'ONLINE_USERS_TOTAL_GUESTS'	=> array(
-		1	=> 'In total there is <strong>%1$d</strong> user online :: %2$s, %3$s and %4$s',
-		2	=> 'In total there are <strong>%1$d</strong> users online :: %2$s, %3$s and %4$s',
+		1	=> 'В момента има <strong>%1$d</strong> потребител на линия :: %2$s, %3$s и %4$s',
+		2	=> 'В момента има <strong>%1$d</strong> потребителя на линия :: %2$s, %3$s и %4$s',
 	),
-	'OPTIONS'					=> 'Options',
+	'OPTIONS'					=> 'Опции',
 
 	'PAGE_OF'				=> 'Page <strong>%1$d</strong> of <strong>%2$d</strong>',
 	'PAGE_TITLE_NUMBER'		=> 'Page %s',
