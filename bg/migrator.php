@@ -37,26 +37,45 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'CONFIG_NOT_EXIST'					=> 'The config setting "%s" unexpectedly does not exist.',
+	'CONFIG_NOT_EXIST'					=> 'Конфигурационният параметър "%s" липсва неочаквано.',
 
-	'GROUP_NOT_EXIST'					=> 'The group "%s" unexpectedly does not exist.',
+	'GROUP_NOT_EXIST'					=> 'Групата "%s" липсва неочаквано.',
 
-	'MIGRATION_APPLY_DEPENDENCIES'		=> 'Apply dependencies of %s.',
-	'MIGRATION_DATA_DONE'				=> 'Installed Data: %1$s; Time: %2$.2f seconds',
-	'MIGRATION_DATA_IN_PROGRESS'		=> 'Installing Data: %1$s; Time: %2$.2f seconds',
-	'MIGRATION_DATA_RUNNING'			=> 'Installing Data: %s.',
-	'MIGRATION_EFFECTIVELY_INSTALLED'	=> 'Migration already effectively installed (skipped): %s',
-	'MIGRATION_EXCEPTION_ERROR'			=> 'Something went wrong during the request and an exception was thrown. The changes made before the error occurred were reversed to the best of our abilities, but you should check the board for errors.',
-	'MIGRATION_NOT_FULFILLABLE'			=> 'The migration "%1$s" is not fulfillable, missing migration "%2$s".',
-	'MIGRATION_NOT_VALID'				=> '%s is not a valid migration.',
-	'MIGRATION_SCHEMA_DONE'				=> 'Installed Schema: %1$s; Time: %2$.2f seconds',
-	'MIGRATION_SCHEMA_RUNNING'			=> 'Installing Schema: %s.',
+	'MIGRATION_APPLY_DEPENDENCIES'		=> 'Приложи модулите, изисквани от %s.',
+	'MIGRATION_DATA_DONE'				=> 'Инсталирани данни: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_DATA_IN_PROGRESS'		=> 'Инсталиране на данни: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_DATA_RUNNING'			=> 'Инсталиране на данни: %s.',
+	'MIGRATION_EFFECTIVELY_INSTALLED'	=> 'Миграцията е вече била приложена ефективно (пропускане): %s',
+	'MIGRATION_EXCEPTION_ERROR'			=> 'Нещо се обърка при последната заявка. Промените, приложени дотук, бяха отменени, доколкото това беше възможно, но е необходима проверка на форума за последвали грешки.',
+	'MIGRATION_NOT_FULFILLABLE'			=> 'Миграцията "%1$s" е неизпълнима, липсва миграция "%2$s".',
+        'MIGRATION_NOT_INSTALLED'			=> 'Миграцията "%s" не е инсталирана.',
+	'MIGRATION_NOT_VALID'				=> '%s не е валидна миграция.',
+	'MIGRATION_SCHEMA_DONE'				=> 'Инсталирана схема: %1$s; Време: %2$.2f секунди',
+        'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'Инсталиране на схема: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_SCHEMA_RUNNING'			=> 'Инсталиране на схема: %s.',
 
-	'MODULE_ERROR'						=> 'An error occurred while creating a module: %s',
-	'MODULE_INFO_FILE_NOT_EXIST'		=> 'A required module info file is missing: %2$s',
-	'MODULE_NOT_EXIST'					=> 'A required module does not exist: %s',
+        'MIGRATION_REVERT_DATA_DONE'		=> 'Възстановени данни: %1$s; Време: %2$.2f секунди',
+        'MIGRATION_REVERT_DATA_IN_PROGRESS'	=> 'Възстановяване на данни: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_DATA_RUNNING'		=> 'Възстановяване на данни: %s.',
+	'MIGRATION_REVERT_SCHEMA_DONE'		=> 'Възстановена схема: %1$s; Време: %2$.2f секунди',
+        'MIGRATION_REVERT_SCHEMA_IN_PROGRESS'	=> 'Възстановяване на схема: %1$s; Време: %2$.2f секунди',
+	'MIGRATION_REVERT_SCHEMA_RUNNING'	=> 'Възстановяване на схема: %s.',
 
-	'PERMISSION_NOT_EXIST'				=> 'The permission setting "%s" unexpectedly does not exist.',
+        'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Едно от миграциите е невалидна. Липсва условие в някоя от помощните функции.',
+        'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Едно от миграциите е невалидна. В някоя от помощните функции липсва валидно извикване на стъпка от миграционния процес.',
+        'MIGRATION_INVALID_DATA_CUSTOM_NOT_CALLABLE'	=> 'Една от миграциите е невалидна. Една от специално-дефинираните функции не може да бъде извикана.',
+	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'Една от миграциите е невалидна поради наличие на непознат тип инструмент за мигриране.',
+        'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'Една от миграциите е невалидна поради наличие на непознат инструмент за мигриране.',
+        'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Една от миграциите е невалидна поради наличие на непознат метод за мигриране.',
 
-	'ROLE_NOT_EXIST'					=> 'The permission role "%s" unexpectedly does not exist.',
+	'MODULE_ERROR'						=> 'Възникна грешка при създаването на модул: %s',
+        'MODULE_EXISTS'						=> 'Модулът вече съществува: %s',
+        'MODULE_EXIST_MULTIPLE'				=> 'Няколко модула с посочения основен модул вече съществуват: %s. Опитайте да прецизирате конфигурацията на модулите, изпозлвайки before/after.',
+        'MODULE_INFO_FILE_NOT_EXIST'		=> 'Лиспсва информационният файл за изискан модул: %2$s',
+	'MODULE_NOT_EXIST'					=> 'Възникна грешка при създаването на модул: %s',
+
+        'PARENT_MODULE_FIND_ERROR'			=> 'Идентификаторът на основния модул не може да бъде намерен: %s',
+	'PERMISSION_NOT_EXIST'				=> 'Конфигурацията за правомощия "%s" липсва неочаквано.',
+
+	'ROLE_NOT_EXIST'					=> 'Ролята "%s" липсва неочаквано.',
 ));
